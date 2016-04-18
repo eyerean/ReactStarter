@@ -1,5 +1,6 @@
 var React = require('react');
 var Header = require('./header');
+var MainView = require('./main-view');
 
 module.exports = React.createClass({
   render: function(){
@@ -12,7 +13,7 @@ module.exports = React.createClass({
     if(this.props.children){
       return this.props.children
     } else {
-      return null
+      return <MainView />
     }
   }
 });

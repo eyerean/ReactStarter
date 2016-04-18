@@ -14,7 +14,7 @@ module.exports = React.createClass({
             <li><a>Company</a></li>
             <li><a>What we do</a></li>
             <li><a>How we do it</a></li>
-            <li><a>Careers</a></li>
+            <li><Link to="careers">Careers</Link></li>
             <li><Link to="community">Community</Link></li>
           </ul>
         </div>

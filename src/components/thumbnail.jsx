@@ -8,14 +8,11 @@ module.exports = React.createClass({
     return <div className="thumbnail">
       <img src={this.props.src} />
       <div className="caption">
-        <h3>{this.props.header}</h3>
-        <p>{this.props.desc}</p>
-        <p>
-          <Link to={this.props.link}>
-            <Button title={this.props.btnTitle} />
-          </Link>
-        </p>
-      </div>
+        <Link to={this.props.link}>
+          <h3>{this.props.header}</h3>
+        </Link>
+          <p>{this.props.desc}</p>
+        </div>
     </div>
   }
 });

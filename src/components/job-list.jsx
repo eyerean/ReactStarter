@@ -2,6 +2,8 @@ var React = require('react');
 var Reflux = require('reflux');
 var JobStore = require('../stores/job-store');
 var Actions = require('../actions');
+var Router = require('react-router');
+var Link = Router.Link;
 
 module.exports = React.createClass({
   mixins: [
@@ -16,15 +18,15 @@ module.exports = React.createClass({
     Actions.getJobs();
   },
   render: function(){
-    return <div className='list-group'>
-      <p>Job List:</p>
+    return <div>
+      <p>Jobs List:</p>
       {this.renderJobs()}
     </div>
   },
   renderJobs: function(){
     return this.state.jobs.map(function(job){
       return <li key={job.slug} > {/* use your id as a key here */}
-        {job.name} at {job.companyId}
+      <Link to={'careers/jobs/' + job.slug}> {job.name} at {job.companyId} </Link>
       </li>
     });
   },

@@ -10,5 +10,3 @@ Will be making a company website.
 
 
 <i>Homepage image taken from [jobbox.be](jobbox.be)</i>
-
-<i> Jobs' information is from [optis.be](optis.be)</i>

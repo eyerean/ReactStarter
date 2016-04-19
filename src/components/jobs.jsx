@@ -4,7 +4,7 @@ var JobList = require('./job-list');
 module.exports = React.createClass({
   render: function(){
     return <div>
-      <p>Lalalal jobs.</p>
+      <h2>Jobs</h2>
       <JobList />
     </div>
   }

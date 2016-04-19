@@ -3,18 +3,14 @@
 }
 
 .thumbnail {
-
+  margin-top: 30px;
   text-align: center;
+  min-height: 205px;
 
   img {
+    margin-top: 20px;
     max-width: 300px;
-    max-height: 300px;
-  }
-}
-
-.community {
-  Thumbnail {
-    height: 400px;
+    max-height: 100px;
   }
 }
 
